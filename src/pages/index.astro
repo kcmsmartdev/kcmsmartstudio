@@ -1,13 +1,87 @@
 ---
 
+import HeaderPc from '../components/HeaderPc.astro';
 import Layout from '../layouts/Layout.astro';
-
+import ImagenHero from "../assets/images/imagen_hero.png"
+import Image from 'astro/components/Image.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+	
+	<HeaderPc />
+	
+	<main class="flex flex-col">
+		<div class="w-full bg-linear-to-b from-[#013922] from-0%  via-[#730614] via-from-50%  to-[#250308] to-100%">
+			<div class="max-w-7xl p-5 mx-auto flex flex-col mt-32 items-center justify-center gap-5">
+
+				<h1 class="max-w-2xl w-full text-center font-DelaGothicOne uppercase text-4xl md:text-5xl text-white leading-tight">
+					Sitio web informativo
+						<span class="relative inline-block overflow-hidden py-2 align-middle ">
+							
+							<span id="texto-animacion"
+							class="inline-block text-[#6DFF19] transition-all duration-700 ease-in-out">
+							</span>
+
+						</span>
+					para tu negocio
+				</h1>
+
+				<p class="max-w-2xl  text-center text-xl text-[#E6E6E6] font-semibold mt-5">
+					Tu negocio necesita una web moderna, rápida y optimizada para mostrar lo que ofreces y convertir visitantes en clientes.
+				</p>
+
+				<div class=" flex items-center gap-5 mt-5">
+				
+						<a href="#servicio" class="px-7 py-3 border border-[#A8A8A8] rounded-full font-PlusJakartaSans text-base text-white">Lo que incluye</a>
+				
+
+					<button class="flex gap-5" >
+						<a href="#servicio" class="font-PlusJakartaSans text-base text-white">Ver proyectos</a>
+					</button>
+				</div>
+
+				<Image src={ImagenHero} alt="Imagen hero" class="w-[950px] h-auto mt-10" fetchpriority={'high'} />
+			</div>
+		</div>
+
+		
+		
+	</main>
 </Layout>
+<script>
+	const palabras = [
+	"profesional",
+    "moderno",
+    "optimizado",
+    
+  ];
+
+    const texto = document.getElementById("texto-animacion");
+
+	let index = 0;
+
+	function cambiarPalabra() {
+    texto?.classList.add("-translate-y-full", "opacity-0");
+
+    setTimeout(() => {
+      index = (index + 1) % palabras.length;
+      texto.textContent = palabras[index];
+
+      texto?.classList.remove("-translate-y-full");
+      texto?.classList.add("translate-y-full");
+
+      requestAnimationFrame(() => {
+        texto?.classList.remove("translate-y-full");
+        texto?.classList.remove("opacity-0");
+      });
+
+    }, 700);
+  }
+
+  texto.textContent = palabras[index];
+
+  setInterval(cambiarPalabra, 5000);
+
+</script>

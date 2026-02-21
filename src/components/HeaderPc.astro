@@ -1,0 +1,51 @@
+---
+interface menu{
+    nombre: string,
+    href: string,
+}
+
+const menuItems: menu[]=[
+    {nombre:"Inicio", href:"/"},
+    {nombre:"Servicio", href:"#servicio"},
+    {nombre:"Proyectos", href:"#proyectos"},
+    {nombre:"Blog", href:"blog.kcmsmart.com"},
+    {nombre:"Contacto", href:"#contacto"}
+]
+---
+
+<header  class="fixed top-0 left-0 z-10 w-full hidden lg:block">
+    <nav id="main-header" class="max-w-7xl mx-auto p-5 text-white flex justify-between items-center">
+       <a href="/" class="font-DelaGothicOne ">KCMSMART</a>
+       <ul class="flex justify-between gap-16 text-[#BFBFBF]">
+        {
+            menuItems.map((items) =>{
+                return(
+                    <li class=" relative  text-sm font-semibold  font-PlusJakartaSans over:text-white transition duration-300
+                     after:absolute after:left-0 after:-bottom-1
+                     after:w-0 after:h-0.5 hover:after:rounded-full
+                     after:bg-white
+                     after:transition-all after:duration-300
+                     hover:after:w-full
+                    ">
+                        <a href={items.href}>{items.nombre}</a>
+                    </li>
+                )
+            })
+        }
+       </ul>
+    </nav>
+</header>
+
+
+<script>
+    const Header = document.getElementById("main-header");
+   
+   window.addEventListener("scroll", () =>{
+    if(window.scrollY >40){
+        Header?.classList.add("bg-black/40", "backdrop-blur-xl", "rounded-4xl");
+    }
+    else(
+        Header?.classList.remove("bg-black/40", "backdrop-blur-xl")
+    )
+   })
+</script>

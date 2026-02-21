@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@import '@fontsource/dela-gothic-one';
+@import '@fontsource-variable/plus-jakarta-sans';
+
+@theme{
+
+    --font-DelaGothicOne: 'Dela Gothic One', sans-serif; 
+    --font-PlusJakartaSans: 'Plus Jakarta Sans Variable', sans-serif;
+
+    --color-Header: #35B74D;
+
+    --text-14px: 14px;
+
+    --my-gradient: fdfdf;
+
+}
