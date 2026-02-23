@@ -9,14 +9,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource-variable/plus-jakarta-sans": "^5.2.8",
     "@fontsource/dela-gothic-one": "^5.2.7",
+    "@fontsource/poppins": "^5.2.7",
     "@tailwindcss/vite": "^4.2.0",
     "astro": "^5.17.1",
     "astro-icon": "^1.1.5",
     "tailwindcss": "^4.2.0"
   },
   "devDependencies": {
+    "@iconify-json/iconoir": "^1.2.10",
     "@iconify-json/pepicons-pop": "^1.2.3"
   }
 }

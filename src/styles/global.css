@@ -1,17 +1,29 @@
 @import "tailwindcss";
 
 @import '@fontsource/dela-gothic-one';
-@import '@fontsource-variable/plus-jakarta-sans';
+@import '@fontsource/poppins';
 
 @theme{
 
     --font-DelaGothicOne: 'Dela Gothic One', sans-serif; 
-    --font-PlusJakartaSans: 'Plus Jakarta Sans Variable', sans-serif;
+    --font-Poppins: 'Poppins', sans-serif;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
 
-    --color-Header: #35B74D;
-
-    --text-14px: 14px;
-
-    --my-gradient: fdfdf;
-
+    --color-primario: #FF5151;
+    --color-secundario: #FD7272;
+    --color-terciario: #CD9898;
+    --color-acento: #A4A4A4;
+    --color-btn: #C83D3D;
+    --color-btnSecundario: #CD9898;
+    
+    --color-Vdeg: #05280B;
+    --color-Rdeg: #671E0C;
+    --color-Odeg: #0F0204;
+    
+    
+    
+    
+    
 }
+

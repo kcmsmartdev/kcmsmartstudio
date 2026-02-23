@@ -1,87 +1,103 @@
 ---
 
+
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+import Header from '../components/Header.astro';
 import HeaderPc from '../components/HeaderPc.astro';
 import Layout from '../layouts/Layout.astro';
-import ImagenHero from "../assets/images/imagen_hero.png"
-import Image from 'astro/components/Image.astro';
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import ImagenHero from "../assets/images/imagen-hero-movil.png"
+import ImagenAstro from "../assets/images/astro.png"
+import ImagenWordpress from "../assets/images/wordpress.png"
+
 ---
 
 <Layout>
 	
+	<Header />
 	<HeaderPc />
 	
-	<main class="flex flex-col">
-		<div class="w-full bg-linear-to-b from-[#013922] from-0%  via-[#730614] via-from-50%  to-[#250308] to-100%">
-			<div class="max-w-7xl p-5 mx-auto flex flex-col mt-32 items-center justify-center gap-5">
+	<main class="w-full">
+		<section class="relative top-0 left-0 z-0 h-full bg-linear-to-b from-0% from-Vdeg via-50% via-Rdeg to-100% to-Odeg ">
+			<div class="max-w-7xl  mx-auto p-3  ">
+				<div class="flex flex-col gap-5 mt-24">
+					<h1 class="font-DelaGothicOne text-2xl text-blanco">
+						SITIO WEB INFORMATIVO <span class="text-terciario">PROFESIONAL</span> PARA TU EMPRESA
+					</h1>
+					<p class="text-blanco text-base font-Poppins">
+						Tu negocio necesita una web moderna, rápida y optimizada para mostrar lo que ofreces y convertir visitantes en clientes.
+					</p>
 
-				<h1 class="max-w-2xl w-full text-center font-DelaGothicOne uppercase text-4xl md:text-5xl text-white leading-tight">
-					Sitio web informativo
-						<span class="relative inline-block overflow-hidden py-2 align-middle ">
-							
-							<span id="texto-animacion"
-							class="inline-block text-[#6DFF19] transition-all duration-700 ease-in-out">
-							</span>
+					<div class="flex flex-col lg:flex-row mt-5 items-center gap-5">
+						<a href="#" 
+						class="group  min-w-2xs relative overflow-hidden flex gap-5 items-center text-sm lg:text-base
+								text-blanco font-Poppins font-bold
+								bg-btn px-11 py-4 rounded-4xl
+								transition-all duration-500
+								hover:-translate-y-0.5
+								hover:shadow-[0_15px_50px_rgba(0,0,0,0.25)]">
 
+						<!-- Efecto luz que cruza -->
+						<span class="absolute inset-0 -translate-x-full 
+									bg-linear-to-r 
+									from-transparent 
+									via-white/30 
+									to-transparent
+									group-hover:translate-x-full
+									transition-transform duration-1000 
+									ease-[cubic-bezier(0.22,1,0.36,1)]">
 						</span>
-					para tu negocio
-				</h1>
 
-				<p class="max-w-2xl  text-center text-xl text-[#E6E6E6] font-semibold mt-5">
-					Tu negocio necesita una web moderna, rápida y optimizada para mostrar lo que ofreces y convertir visitantes en clientes.
-				</p>
+						<span class="relative z-10">
+							Hablemos por whatsapp
+						</span>
 
-				<div class=" flex items-center gap-5 mt-5">
-				
-						<a href="#servicio" class="px-7 py-3 border border-[#A8A8A8] rounded-full font-PlusJakartaSans text-base text-white">Lo que incluye</a>
-				
+						<Icon name="iconoir:whatsapp-solid" 
+								class="relative z-10 text-blanco size-6 
+									transition-transform duration-300 
+									group-hover:rotate-6 group-hover:scale-110" />
+						</a>
 
-					<button class="flex gap-5" >
-						<a href="#servicio" class="font-PlusJakartaSans text-base text-white">Ver proyectos</a>
-					</button>
+						<a href="#proyectos" 
+						class="group min-w-2xs px-11 py-4 
+								border border-btnSecundario 
+								rounded-4xl 
+								text-btnSecundario text-sm lg:text-base  
+								font-bold flex justify-center
+								transition-all duration-300
+								hover:bg-btnSecundario/10
+								hover:border-btnSecundario
+								hover:-translate-y-0.5">
+
+						<span class="transition-colors duration-300 
+									group-hover:text-white">
+							Ver proyectos
+						</span>
+
+						</a>
+
+					</div>
 				</div>
 
-				<Image src={ImagenHero} alt="Imagen hero" class="w-[950px] h-auto mt-10" fetchpriority={'high'} />
+				<div class="mt-10">
+					<Image src={ImagenHero}  alt="Imagen hero KCMSMART.COM" 
+					class="w-full h-auto shadow-2xl" fetchpriority="high"/>
+
+				</div>
+
+				<div class="flex flex-col items-center gap-5 mt-16">
+					<span class="text-blanco font-Poppins font-extralight">Con tecnología</span>
+					<div class="flex gap-5 items-center justify-center">
+					<Image src={ImagenAstro} class="w-14" width={63} height={79} alt="Imagen de Astro"/>
+					<Image src={ImagenWordpress} class="w-16 h-16" width={64} height={63} alt="Imagen de Wordpress"/>
+				</div>
+				</div>
+				
 			</div>
-		</div>
+		</section>
 
-		
-		
+
 	</main>
+	
+
 </Layout>
-<script>
-	const palabras = [
-	"profesional",
-    "moderno",
-    "optimizado",
-    
-  ];
-
-    const texto = document.getElementById("texto-animacion");
-
-	let index = 0;
-
-	function cambiarPalabra() {
-    texto?.classList.add("-translate-y-full", "opacity-0");
-
-    setTimeout(() => {
-      index = (index + 1) % palabras.length;
-      texto.textContent = palabras[index];
-
-      texto?.classList.remove("-translate-y-full");
-      texto?.classList.add("translate-y-full");
-
-      requestAnimationFrame(() => {
-        texto?.classList.remove("translate-y-full");
-        texto?.classList.remove("opacity-0");
-      });
-
-    }, 700);
-  }
-
-  texto.textContent = palabras[index];
-
-  setInterval(cambiarPalabra, 5000);
-
-</script>
