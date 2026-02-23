@@ -7,6 +7,8 @@ import Header from '../components/Header.astro';
 import HeaderPc from '../components/HeaderPc.astro';
 import Layout from '../layouts/Layout.astro';
 import ImagenHero from "../assets/images/imagen-hero-movil.png"
+import ImagenHeroPc from "../assets/images/imagen-hero-pc.png"
+
 import ImagenAstro from "../assets/images/astro.png"
 import ImagenWordpress from "../assets/images/wordpress.png"
 
@@ -20,15 +22,15 @@ import ImagenWordpress from "../assets/images/wordpress.png"
 	<main class="w-full">
 		<section class="relative top-0 left-0 z-0 h-full bg-linear-to-b from-0% from-Vdeg via-50% via-Rdeg to-100% to-Odeg ">
 			<div class="max-w-7xl  mx-auto p-3  ">
-				<div class="flex flex-col gap-5 mt-24">
-					<h1 class="font-DelaGothicOne text-2xl text-blanco">
+				<div class="flex flex-col  mt-24 lg:mt-36 items-center">
+					<h1 class="w-full  max-w-4xl font-DelaGothicOne text-2xl md:text-4xl text-blanco lg:text-6xl text-center">
 						SITIO WEB INFORMATIVO <span class="text-terciario">PROFESIONAL</span> PARA TU EMPRESA
 					</h1>
-					<p class="text-blanco text-base font-Poppins">
+					<p class="w-full  max-w-3xl text-center text-blanco text-base font-Poppins mt-10">
 						Tu negocio necesita una web moderna, rápida y optimizada para mostrar lo que ofreces y convertir visitantes en clientes.
 					</p>
 
-					<div class="flex flex-col lg:flex-row mt-5 items-center gap-5">
+					<div class="flex flex-col lg:flex-row mt-10 items-center gap-5">
 						<a href="#" 
 						class="group  min-w-2xs relative overflow-hidden flex gap-5 items-center text-sm lg:text-base
 								text-blanco font-Poppins font-bold
@@ -79,21 +81,27 @@ import ImagenWordpress from "../assets/images/wordpress.png"
 					</div>
 				</div>
 
-				<div class="mt-10">
-					<Image src={ImagenHero}  alt="Imagen hero KCMSMART.COM" 
-					class="w-full h-auto shadow-2xl" fetchpriority="high"/>
+				<picture class=" mt-10 sm:mt-16 lg:mt-32 flex flex-col items-center">
+					<source media="(min-width: 640px)"  srcset={ImagenHeroPc.src}/>
 
-				</div>
+					<Image src={ImagenHero}  alt="Imagen hero KCMSMART.COM" 
+					class="w-full sm:w-[550px] md:w-[650px]  lg:w-[950px] h-auto shadow-2xl" fetchpriority="high"/>
+
+				</picture>
 
 				<div class="flex flex-col items-center gap-5 mt-16">
-					<span class="text-blanco font-Poppins font-extralight">Con tecnología</span>
-					<div class="flex gap-5 items-center justify-center">
-					<Image src={ImagenAstro} class="w-14" width={63} height={79} alt="Imagen de Astro"/>
-					<Image src={ImagenWordpress} class="w-16 h-16" width={64} height={63} alt="Imagen de Wordpress"/>
+					<span class="text-blanco font-Poppins font-extralight text-sm lg:text-base">Con tecnología</span>
+					<div class="flex gap-5 justify-center">
+					<Image src={ImagenAstro} class="w-6 sm:w-9 md:h-auto" width={63} height={79} alt="Imagen de Astro"/>
+					<Image src={ImagenWordpress} class="size-7 sm:size-10" width={64} height={63} alt="Imagen de Wordpress"/>
 				</div>
 				</div>
 				
 			</div>
+		</section>
+
+		<section>
+			
 		</section>
 
 
