@@ -1,104 +1,109 @@
 ---
-import {Icon} from "astro-icon/components"
+import { Icon } from "astro-icon/components";
 ---
 
- <section class="w-full bg-Odeg">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 p-3 gap-10">
-        <div class="mt-24 lg:mt-32 flex flex-col gap-6 max-w-2xl">
-          <!-- TÍTULO -->
-          <h2
-            class="text-3xl lg:text-5xl uppercase
+<section id="sobremi" class="w-full bg-Odeg">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 p-3 gap-10">
+    <div class="mt-24 lg:mt-32 flex flex-col gap-6 max-w-2xl">
+      <!-- TÍTULO -->
+      <h2
+        class="text-3xl lg:text-5xl uppercase
                 text-blanco font-DelaGothicOne
                 leading-[1.1] tracking-wide"
-          >
-            ¿Por qué trabajar con
-            <span class="text-primario block">nosotros?</span>
-          </h2>
-
-          <!-- TEXTO -->
-          <p
-            class="text-base lg:text-lg
-       text-blanco/70
+      >
+        ¿Qué hace diferente mi
+        <span class="text-primario block">trabajo?</span>
+      </h2>
+      <div class="w-16 h-0.5 bg-primario mt-4 mb-2 rounded-full"></div>
+      <p class="text-lg lg:text-xl text-blanco font-medium leading-relaxed">
+        No se trata solo de tener una web, sino de tener una que genere
+        resultados.
+      </p>
+      <!-- TEXTO -->
+      <p
+        class="text-base lg:text-lg
+       text-blanco/70 font-Poppins
        font-light leading-relaxed"
-          >
-            Muchas empresas pierden oportunidades por tener una presencia
-            digital desactualizada, lenta o que no refleja el verdadero valor de
-            lo que ofrecen.
-          </p>
+      >
+        Muchas empresas pierden oportunidades por tener una presencia digital
+        desactualizada, lenta o que no transmite el verdadero valor de lo que
+        ofrecen.
+      </p>
 
-          <p
-            class="text-base lg:text-lg
-       text-blanco/70
+      <p
+        class="text-base lg:text-lg
+       text-blanco/70 font-Poppins
        font-light leading-relaxed"
-          >
-            En KCM SMART desarrollamos sitios web informativos, rápidos y
-            optimizados para SEO que fortalecen tu imagen, generan confianza y
-            convierten visitas en clientes.
-          </p>
+      >
+        Me especializo en desarrollar sitios web informativos, rápidos y
+        optimizados para SEO que fortalecen tu imagen, generan confianza y
+        convierten visitas en clientes reales.
+      </p>
 
-          <p
-            class="text-base lg:text-lg
-       text-blanco/70
+      <p
+        class="text-base lg:text-lg
+       text-blanco/70 font-Poppins
        font-light leading-relaxed"
+      >
+        Trabajo con tecnología moderna como <strong class="italic text-blanco/90">Astro</strong>, <strong class="italic text-blanco/90">TypeScript</strong> y <strong class="italic text-blanco/90">WordPress</strong> para
+        crear soluciones sólidas, escalables y alineadas a tus objetivos de
+        negocio.
+      </p>
+
+      <!-- ESTADÍSTICAS -->
+      <div
+        id="stats"
+        class="grid grid-cols-3 gap-8 mt-14 pt-10 border-t border-white/10"
+      >
+        <article class="flex flex-col">
+          <span
+            class="stat-number text-3xl lg:text-4xl font-DelaGothicOne text-blanco"
+            data-target="15"
+            data-prefix="+"
           >
-            Trabajamos con tecnología moderna como Astro, TypeScript y
-            WordPress.
-          </p>
+            0
+          </span>
+          <span class="text-sm lg:text-base font-medium text-blanco/80">
+            Páginas creadas
+          </span>
+        </article>
 
-          <!-- ESTADÍSTICAS -->
-          <div
-            id="stats"
-            class="grid grid-cols-3 gap-8 mt-14 pt-10 border-t border-white/10"
+        <article class="flex flex-col">
+          <span
+            class="stat-number text-3xl lg:text-4xl font-DelaGothicOne text-blanco"
+            data-target="2"
+            data-prefix="+"
           >
-            <article class="flex flex-col">
-              <span
-                class="stat-number text-3xl lg:text-4xl font-DelaGothicOne text-blanco"
-                data-target="15"
-                data-prefix="+"
-              >
-                0
-              </span>
-              <span class="text-sm lg:text-base font-medium text-blanco/80">
-                Páginas creadas
-              </span>
-            </article>
+            0
+          </span>
+          <span class="text-sm lg:text-base font-medium text-blanco/80">
+            Años de experiencia
+          </span>
+        </article>
 
-            <article class="flex flex-col">
-              <span
-                class="stat-number text-3xl lg:text-4xl font-DelaGothicOne text-blanco"
-                data-target="2"
-                data-prefix="+"
-              >
-                0
-              </span>
-              <span class="text-sm lg:text-base font-medium text-blanco/80">
-                Años de experiencia
-              </span>
-            </article>
+        <article class="flex flex-col">
+          <span
+            class="stat-number text-3xl lg:text-4xl font-DelaGothicOne text-blanco"
+            data-target="100"
+            data-suffix="%"
+          >
+            0
+          </span>
+          <span class="text-sm lg:text-base font-medium text-blanco/80">
+            Clientes satisfechos
+          </span>
+        </article>
+      </div>
+    </div>
 
-            <article class="flex flex-col">
-              <span
-                class="stat-number text-3xl lg:text-4xl font-DelaGothicOne text-blanco"
-                data-target="100"
-                data-suffix="%"
-              >
-                0
-              </span>
-              <span class="text-sm lg:text-base font-medium text-blanco/80">
-                Clientes satisfechos
-              </span>
-            </article>
-          </div>
-        </div>
-
-        <div
-          class="mt-14 lg:mt-32
+    <div
+      class="mt-14 lg:mt-32
             grid grid-cols-1 sm:grid-cols-2
             gap-6 lg:gap-8"
-        >
-          <!-- 01 -->
-          <article
-            class="group h-full flex flex-col gap-5
+    >
+      <!-- 01 -->
+      <article
+        class="group h-full flex flex-col gap-5
            border border-white/10
            rounded-2xl p-6
            transition-all duration-500
@@ -108,163 +113,159 @@ import {Icon} from "astro-icon/components"
            hover:shadow-xl
            hover:shadow-primario/10
            lg:even:translate-y-10"
-          >
-            <Icon
-              name="iconoir:coffee-cup"
-              class="size-7 text-terciario
-             transition-all duration-500
-             group-hover:text-primario
-             group-hover:scale-110"
-            />
-
-            <h3
-              class="text-blanco text-base md:text-lg
-             font-DelaGothicOne leading-snug"
-            >
-              Confianza desde el primer vistazo
-            </h3>
-
-            <p
-              class="text-blanco/70 text-sm md:text-base
-             font-Poppins font-light leading-relaxed"
-            >
-              Proyecta autoridad y profesionalismo con una web clara,
-              estructurada y alineada a tu marca.
-            </p>
-          </article>
-
-          <!-- 02 -->
-          <article
-            class="group h-full flex flex-col gap-5
-           border border-white/10
-           rounded-2xl p-6
-           transition-all duration-500
-           hover:border-primario
-           hover:-translate-y-2
-           hover:bg-white/5
-           hover:shadow-xl
-           hover:shadow-primario/10
-           lg:even:translate-y-10"
-          >
-            <Icon
-              name="iconoir:security-pass"
-              class="size-7 text-terciario
-             transition-all duration-500
-             group-hover:text-primario
-             group-hover:scale-110"
-            />
-
-            <h3
-              class="text-blanco text-base md:text-lg
-             font-DelaGothicOne leading-snug"
-            >
-              Recupera oportunidades
-            </h3>
-
-            <p
-              class="text-blanco/70 text-sm md:text-base
-             font-Poppins font-light leading-relaxed"
-            >
-              Evita perder clientes por una web lenta, desactualizada o poco
-              profesional.
-            </p>
-          </article>
-
-          <!-- 03 -->
-          <article
-            class="group h-full flex flex-col gap-5
-           border border-white/10
-           rounded-2xl p-6
-           transition-all duration-500
-           hover:border-primario
-           hover:-translate-y-2
-           hover:bg-white/5
-           hover:shadow-xl
-           hover:shadow-primario/10
-           lg:even:translate-y-10"
-          >
-            <Icon
-              name="iconoir:finder"
-              class="size-7 text-terciario
-             transition-all duration-500
-             group-hover:text-primario
-             group-hover:scale-110"
-            />
-
-            <h3
-              class="text-blanco text-base md:text-lg
-             font-DelaGothicOne leading-snug"
-            >
-              Acompañamiento real
-            </h3>
-
-            <p
-              class="text-blanco/70 text-sm md:text-base
-             font-Poppins font-light leading-relaxed"
-            >
-              Soporte antes, durante y después del lanzamiento para mantener tu
-              sitio siempre optimizado.
-            </p>
-          </article>
-
-          <!-- 04 -->
-          <article
-            class="group h-full flex flex-col gap-5
-           border border-white/10
-           rounded-2xl p-6
-           transition-all duration-500
-           hover:border-primario
-           hover:-translate-y-2
-           hover:bg-white/5
-           hover:shadow-xl
-           hover:shadow-primario/10
-           lg:even:translate-y-10"
-          >
-            <Icon
-              name="iconoir:stat-up"
-              class="size-7 text-terciario
-             transition-all duration-500
-             group-hover:text-primario
-             group-hover:scale-110"
-            />
-
-            <h3
-              class="text-blanco text-base md:text-lg
-             font-DelaGothicOne leading-snug"
-            >
-              Crecimiento estratégico
-            </h3>
-
-            <p
-              class="text-blanco/70 text-sm md:text-base
-             font-Poppins font-light leading-relaxed"
-            >
-              Sitio optimizado para posicionar en Google y acompañar el
-              crecimiento de tu negocio.
-            </p>
-          </article>
-        </div>
-      </div>
-
-      <div
-        class="max-w-5xl w-full flex justify-center
-         mx-auto mt-40 px-6"
       >
-        <span
-          class="font-Poppins font-light
+        <Icon
+          name="iconoir:coffee-cup"
+          class="size-7 text-terciario
+             transition-all duration-500
+             group-hover:text-primario
+             group-hover:scale-110"
+        />
+
+        <h3
+          class="text-blanco text-base md:text-lg
+             font-DelaGothicOne leading-snug"
+        >
+          Confianza desde el primer vistazo
+        </h3>
+
+        <p
+          class="text-blanco/70 text-sm md:text-base
+             font-Poppins font-light leading-relaxed"
+        >
+          Proyecta autoridad y profesionalismo con una web clara, estructurada y
+          alineada a tu marca.
+        </p>
+      </article>
+
+      <!-- 02 -->
+      <article
+        class="group h-full flex flex-col gap-5
+           border border-white/10
+           rounded-2xl p-6
+           transition-all duration-500
+           hover:border-primario
+           hover:-translate-y-2
+           hover:bg-white/5
+           hover:shadow-xl
+           hover:shadow-primario/10
+           lg:even:translate-y-10"
+      >
+        <Icon
+          name="iconoir:security-pass"
+          class="size-7 text-terciario
+             transition-all duration-500
+             group-hover:text-primario
+             group-hover:scale-110"
+        />
+
+        <h3
+          class="text-blanco text-base md:text-lg
+             font-DelaGothicOne leading-snug"
+        >
+          Recupera oportunidades
+        </h3>
+
+        <p
+          class="text-blanco/70 text-sm md:text-base
+             font-Poppins font-light leading-relaxed"
+        >
+          Evita perder clientes por una web lenta, desactualizada o poco
+          profesional.
+        </p>
+      </article>
+
+      <!-- 03 -->
+      <article
+        class="group h-full flex flex-col gap-5
+           border border-white/10
+           rounded-2xl p-6
+           transition-all duration-500
+           hover:border-primario
+           hover:-translate-y-2
+           hover:bg-white/5
+           hover:shadow-xl
+           hover:shadow-primario/10
+           lg:even:translate-y-10"
+      >
+        <Icon
+          name="iconoir:finder"
+          class="size-7 text-terciario
+             transition-all duration-500
+             group-hover:text-primario
+             group-hover:scale-110"
+        />
+
+        <h3
+          class="text-blanco text-base md:text-lg
+             font-DelaGothicOne leading-snug"
+        >
+          Acompañamiento real
+        </h3>
+
+        <p
+          class="text-blanco/70 text-sm md:text-base
+             font-Poppins font-light leading-relaxed"
+        >
+          Soporte antes, durante y después del lanzamiento para mantener tu
+          sitio siempre optimizado.
+        </p>
+      </article>
+
+      <!-- 04 -->
+      <article
+        class="group h-full flex flex-col gap-5
+           border border-white/10
+           rounded-2xl p-6
+           transition-all duration-500
+           hover:border-primario
+           hover:-translate-y-2
+           hover:bg-white/5
+           hover:shadow-xl
+           hover:shadow-primario/10
+           lg:even:translate-y-10"
+      >
+        <Icon
+          name="iconoir:stat-up"
+          class="size-7 text-terciario
+             transition-all duration-500
+             group-hover:text-primario
+             group-hover:scale-110"
+        />
+
+        <h3
+          class="text-blanco text-base md:text-lg
+             font-DelaGothicOne leading-snug"
+        >
+          Crecimiento estratégico
+        </h3>
+
+        <p
+          class="text-blanco/70 text-sm md:text-base
+             font-Poppins font-light leading-relaxed"
+        >
+          Sitio optimizado para posicionar en Google y acompañar el crecimiento
+          de tu negocio.
+        </p>
+      </article>
+    </div>
+  </div>
+
+  <div class="max-w-5xl w-full flex justify-center
+         mx-auto mt-40 px-6">
+    <span
+      class="font-Poppins font-light
            text-2xl lg:text-6xl
            text-center
            bg-linear-to-r from-primario via-secundario to-terciario
            bg-size-[200%_200%]
            bg-clip-text text-transparent
            animate-gradient-x"
-        >
-          “Me especializo en desarrollo web informativo e institucional”
-        </span>
-      </div>
-    </section>
-
-
+    >
+      “Me especializo en desarrollo web informativo e institucional”
+    </span>
+  </div>
+</section>
 
 <script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
@@ -306,7 +307,7 @@ import {Icon} from "astro-icon/components"
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
 
     if (statsSection) {

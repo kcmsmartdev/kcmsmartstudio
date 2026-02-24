@@ -7,13 +7,13 @@ import ImagenProyecto2 from "../assets/images/imagen-proyecto-2.png";
 import ImagenProyecto3 from "../assets/images/imagen-proyecto-3.png";
 ---
 
-    <section
+    <section id="proyectos"
       class="w-full bg-linear-to-b from-0% from-Odeg to-100 via-50 via-Vdeg to-100% to-Vdeg"
     >
       <div class="max-w-7xl mx-auto p-3 flex flex-col items-center">
         <div class="mt-32">
           <h2
-            class="text-3xl lg:text-5xl uppercase text-center   
+            class="text-3xl lg:text-5xl uppercase lg:text-center   
            text-blanco font-DelaGothicOne
            tracking-wider leading-[1.1]"
           >
@@ -21,7 +21,7 @@ import ImagenProyecto3 from "../assets/images/imagen-proyecto-3.png";
             <span class="text-secundario block">realizados</span>
           </h2>
           <p
-            class="text-sm md:text-base lg:text-lg
+            class="text-sm md:text-base lg:text-lg font-Poppins mt-5 w-full max-w-lg lg:text-center
             text-blanco/90 font-light leading-relaxed"
           >
             Una web bien hecha, moderna, rápida y optimizada para mostrar lo que
@@ -29,7 +29,9 @@ import ImagenProyecto3 from "../assets/images/imagen-proyecto-3.png";
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-20">
+
+
           <article
   class="flex flex-col group 
          transition-all duration-500 
@@ -37,7 +39,7 @@ import ImagenProyecto3 from "../assets/images/imagen-proyecto-3.png";
 >
 
   <!-- Imagen -->
-  <div class="overflow-hidden rounded-t-4xl rounded-br-4xl">
+  <div class="overflow-hidden rounded-t-4xl rounded-br-4xl ">
     <Image
       src={ImagenProyecto1}
       alt="Imagen proyecto 1"

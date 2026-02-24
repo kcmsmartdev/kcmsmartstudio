@@ -1,11 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import {Icon} from "astro-icon/components"
+import { Icon } from "astro-icon/components";
 import ImagenHero from "../assets/images/imagen-hero-movil.png";
 import ImagenHeroPc from "../assets/images/imagen-hero-pc.png";
 import ImagenAstro from "../assets/images/astro.png";
 import ImagenWordpress from "../assets/images/wordpress.png";
-
 ---
 
 <section
@@ -14,13 +13,14 @@ import ImagenWordpress from "../assets/images/wordpress.png";
          from-Vdeg via-Rdeg to-Odeg"
 >
   <!-- Glow decorativo -->
-  <div class="absolute -top-40 -left-40 w-[500px] h-[500px]
-              bg-primario/20 blur-[120px] rounded-full"></div>
+  <div
+    class="absolute -top-40 -left-40 w-[500px] h-[500px]
+              bg-primario/20 blur-[120px] rounded-full"
+  >
+  </div>
 
   <div class="max-w-7xl mx-auto p-6 relative z-10">
-
     <div class="flex flex-col mt-28 lg:mt-40 items-center text-center">
-
       <!-- H1 -->
       <h1
         class="max-w-4xl
@@ -31,7 +31,12 @@ import ImagenWordpress from "../assets/images/wordpress.png";
                tracking-wide"
       >
         SITIO WEB
-        <span class="block text-terciario">
+        <span
+          id="changingWord"
+          class="block text-terciario
+           transition-all duration-700 ease-in-out
+           opacity-100 translate-y-0 blur-0"
+        >
           PROFESIONAL
         </span>
         PARA TU EMPRESA
@@ -45,13 +50,12 @@ import ImagenWordpress from "../assets/images/wordpress.png";
                font-Poppins
                mt-8"
       >
-        Diseño moderno, carga rápida y optimización SEO para que tu
-        negocio genere confianza y convierta visitas en clientes.
+        Diseño moderno, carga rápida y optimización SEO para que tu negocio
+        genere confianza y convierta visitas en clientes.
       </p>
 
       <!-- Botones -->
       <div class="flex flex-col sm:flex-row mt-12 items-center gap-6">
-
         <!-- CTA principal -->
         <a
           href="#"
@@ -74,9 +78,7 @@ import ImagenWordpress from "../assets/images/wordpress.png";
                    transition-transform duration-1000"
           ></span>
 
-          <span class="relative z-10">
-            Hablemos por WhatsApp
-          </span>
+          <span class="relative z-10"> Hablemos por WhatsApp </span>
 
           <Icon
             name="iconoir:whatsapp-solid"
@@ -100,17 +102,18 @@ import ImagenWordpress from "../assets/images/wordpress.png";
         >
           Ver proyectos
         </a>
-
       </div>
     </div>
 
     <!-- Imagen -->
     <div class="mt-16 lg:mt-28 flex justify-center relative">
-
       <div class="absolute inset-0 flex justify-center">
-        <div class="w-150 h-75
+        <div
+          class="w-150 h-75
                     bg-primario/10 blur-[120px]
-                    rounded-full"></div>
+                    rounded-full"
+        >
+        </div>
       </div>
 
       <Image
@@ -125,28 +128,59 @@ import ImagenWordpress from "../assets/images/wordpress.png";
 
     <!-- Tecnología -->
     <div class="flex flex-col items-center gap-6 mt-20">
-
       <span class="text-blanco/50 font-Poppins text-sm tracking-wide">
         TECNOLOGÍA QUE UTILIZAMOS
       </span>
 
-      <div class="flex gap-10  justify-center">
+      <div class="w-full flex justify-center items-center mt-6">
+        <div class="flex items-center justify-center gap-12">
+          <Image
+            src={ImagenAstro}
+            class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+            alt="Astro"
+          />
 
-        <Image
-          src={ImagenAstro}
-          class="w-8 opacity-70 hover:opacity-100 transition"
-          alt="Astro"
-        />
-
-        <Image
-          src={ImagenWordpress}
-          class="w-8 opacity-70 hover:opacity-100 transition"
-          alt="WordPress"
-        />
-
+          <Image
+            src={ImagenWordpress}
+            class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+            alt="WordPress"
+          />
+        </div>
       </div>
-
     </div>
-
   </div>
 </section>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const words = ["PROFESIONAL", "MODERNO", "RESPONSIVO"];
+    const el = document.getElementById("changingWord");
+
+    let index = 0;
+
+    setInterval(() => {
+      if (!el) return;
+
+      // Animación salida
+      el.classList.add("-translate-y-6", "opacity-0", "blur-sm");
+
+      setTimeout(() => {
+        // Cambiar palabra
+        index = (index + 1) % words.length;
+        el.textContent = words[index];
+
+        // Posición inicial entrada
+        el.classList.remove("-translate-y-6");
+        el.classList.add("translate-y-6");
+
+        setTimeout(() => {
+          // Animación entrada
+          el.classList.remove("translate-y-6", "opacity-0", "blur-sm");
+          el.classList.add("translate-y-0", "opacity-100", "blur-0");
+        }, 50);
+
+      }, 700);
+
+    }, 5000);
+  });
+</script>
