@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import HeaderPc from "../components/HeaderPc.astro";
+---
+
+<Layout>
+  <Header />
+  <HeaderPc />
+  <div class="w-full bg-linear-to-b
+         from-Vdeg via-Rdeg to-Odeg">
+    <section class="max-w-4xl mx-auto  px-6 flex flex-col gap-12">
+      <!-- Título -->
+      <div class="flex flex-col gap-6 mt-32">
+        <h1
+          class="text-3xl lg:text-5xl font-DelaGothicOne text-blanco leading-tight"
+        >
+          Política de
+          <span class="block text-primario">Privacidad</span>
+        </h1>
+
+        <p class="text-blanco/70 font-light leading-relaxed">
+          En KCM SMART, la privacidad y protección de tus datos personales es
+          una prioridad.
+        </p>
+      </div>
+
+      <!-- Bloques -->
+      <div class="flex flex-col gap-10">
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            1. Información General
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            Esta política explica cómo se recopilan, utilizan y protegen los
+            datos personales cuando visitas este sitio web.
+          </p>
+        </article>
+
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            2. Datos Recopilados
+          </h2>
+          <ul
+            class="text-blanco/70 font-light leading-relaxed list-disc pl-5 space-y-2"
+          >
+            <li>Nombre y correo electrónico</li>
+            <li>Información enviada mediante formularios</li>
+            <li>Datos técnicos de navegación</li>
+            <li>Cookies</li>
+          </ul>
+        </article>
+
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            3. Uso de la Información
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            Los datos se utilizan exclusivamente para responder consultas,
+            mejorar el rendimiento del sitio y garantizar una experiencia
+            segura.
+          </p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <Footer />
+</Layout>

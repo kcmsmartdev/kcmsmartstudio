@@ -1,0 +1,105 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import HeaderPc from "../components/HeaderPc.astro";
+import Layout from "../layouts/Layout.astro";
+
+
+---
+<Layout>
+  <Header />
+  <HeaderPc />
+
+  <div class="w-full bg-linear-to-b from-Vdeg via-Rdeg to-Odeg">
+    <section class="max-w-4xl mx-auto px-6 flex flex-col gap-12 pb-24">
+      
+      <!-- Título -->
+      <div class="flex flex-col gap-6 mt-32">
+        <h1
+          class="text-3xl lg:text-5xl font-DelaGothicOne text-blanco leading-tight"
+        >
+          Términos y
+          <span class="block text-primario">Condiciones</span>
+        </h1>
+
+        <p class="text-blanco/70 font-light leading-relaxed">
+          El acceso y uso del sitio web de KCM SMART implica la aceptación de los siguientes términos y condiciones.
+        </p>
+      </div>
+
+      <!-- Bloques -->
+      <div class="flex flex-col gap-10">
+
+        <!-- 1 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            1. Uso del Sitio Web
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            Este sitio tiene fines informativos y comerciales relacionados con los servicios de desarrollo web ofrecidos por KCM SMART. 
+            El usuario se compromete a utilizar el sitio de manera lícita y respetuosa.
+          </p>
+        </article>
+
+        <!-- 2 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            2. Propiedad Intelectual
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            Todos los contenidos del sitio (textos, diseños, imágenes, logotipos y código) 
+            son propiedad de KCM SMART, salvo que se indique lo contrario. 
+            Queda prohibida su reproducción o uso sin autorización previa.
+          </p>
+        </article>
+
+        <!-- 3 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            3. Responsabilidad
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            KCM SMART no se responsabiliza por daños derivados del uso indebido del sitio web 
+            ni por interrupciones técnicas fuera de su control.
+          </p>
+        </article>
+
+        <!-- 4 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            4. Enlaces Externos
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            Este sitio puede contener enlaces a terceros. 
+            KCM SMART no tiene control sobre el contenido o políticas de privacidad de dichos sitios.
+          </p>
+        </article>
+
+        <!-- 5 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            5. Modificaciones
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            KCM SMART se reserva el derecho de modificar estos términos en cualquier momento. 
+            Las actualizaciones entrarán en vigor una vez publicadas en el sitio web.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+  </div>
+
+  <Footer />
+</Layout>

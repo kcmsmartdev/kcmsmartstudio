@@ -1,0 +1,91 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import HeaderPc from "../components/HeaderPc.astro";
+import Layout from "../layouts/Layout.astro";
+
+
+---
+
+<Layout>
+  <Header />
+  <HeaderPc />
+
+  <div class="w-full bg-linear-to-b from-Vdeg via-Rdeg to-Odeg">
+    <section class="max-w-4xl mx-auto px-6 flex flex-col gap-12 pb-24">
+      
+      <!-- Título -->
+      <div class="flex flex-col gap-6 mt-32">
+        <h1
+          class="text-3xl lg:text-5xl font-DelaGothicOne text-blanco leading-tight"
+        >
+          Política de
+          <span class="block text-primario">Cookies</span>
+        </h1>
+
+        <p class="text-blanco/70 font-light leading-relaxed">
+          En KCM SMART utilizamos cookies para mejorar tu experiencia de navegación y optimizar el rendimiento del sitio web.
+        </p>
+      </div>
+
+      <!-- Bloques -->
+      <div class="flex flex-col gap-10">
+
+        <!-- 1 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            1. ¿Qué son las cookies?
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. 
+            Permiten recordar información sobre tu navegación para mejorar la experiencia del usuario.
+          </p>
+        </article>
+
+        <!-- 2 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            2. Tipos de cookies que utilizamos
+          </h2>
+          <ul class="text-blanco/70 font-light leading-relaxed list-disc pl-5 space-y-2">
+            <li><strong>Cookies técnicas:</strong> necesarias para el funcionamiento básico del sitio.</li>
+            <li><strong>Cookies de análisis:</strong> permiten recopilar información anónima sobre el uso del sitio.</li>
+            <li><strong>Cookies de rendimiento:</strong> ayudan a mejorar la velocidad y funcionalidad.</li>
+          </ul>
+        </article>
+
+        <!-- 3 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            3. ¿Cómo puedes gestionar las cookies?
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            Puedes aceptar, rechazar o eliminar las cookies desde la configuración de tu navegador. 
+            Ten en cuenta que deshabilitar algunas cookies puede afectar el funcionamiento del sitio.
+          </p>
+        </article>
+
+        <!-- 4 -->
+        <article
+          class="border border-white/10 rounded-2xl p-6 hover:border-primario/40 transition-all duration-300"
+        >
+          <h2 class="font-DelaGothicOne text-blanco text-xl mb-4">
+            4. Actualizaciones
+          </h2>
+          <p class="text-blanco/70 font-light leading-relaxed">
+            Esta Política de Cookies puede actualizarse en cualquier momento para reflejar cambios en el sitio o en la normativa aplicable.
+          </p>
+        </article>
+
+      </div>
+    </section>
+  </div>
+
+  <Footer />
+</Layout>
