@@ -17,7 +17,7 @@
     --color-btn: #C83D3D;
     --color-btnSecundario: #CD9898;
     --color-Blancogris: #D1D1D1;
-    
+    --color-grisClaro: #858585;
     --color-Vdeg: #05280B;
     --color-Rdeg: #671E0C;
     --color-Odeg: #0F0204;
@@ -26,5 +26,18 @@
     
     
     
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 6s ease infinite;
 }
 
