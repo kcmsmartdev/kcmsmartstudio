@@ -1,0 +1,77 @@
+---
+
+---
+
+<section class="bg-linear-to-b from-0% from-Vdeg to-100% to-Odeg">
+  <div class="max-w-7xl mx-auto p-3 grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <div class="mt-32">
+      <h2
+        class="text-2xl lg:text-4xl uppercase
+             text-blanco font-DelaGothicOne
+             leading-tight"
+      >
+        PREGUNTAS
+        <span class="text-secundario">FRECUENTES</span>
+      </h2>
+    </div>
+
+    <div class="mt-32">
+      <h2
+        class="text-2xl lg:text-4xl uppercase
+             text-secundario font-DelaGothicOne
+             leading-tight"
+      >
+        CONTÁCTANOS
+      </h2>
+      <p
+        class="text-sm md:text-base lg:text-lg
+            text-blanco font-medium leading-relaxed"
+      >
+        Estoy listo para ayudarte a crear una web profesional que impulse tu
+        negocio.
+      </p>
+      <div class="w-full mt-5">
+        <form id="formularioContacto" method="post">
+          <div>
+            <label for="nombre" class="font-DelaGothicOne text-lg text-acento">NOMBRE</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ejem Luis Mendoza" required
+            class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco">
+          </div>
+
+          
+          <div class="mt-4">
+            <label for="email" class="font-DelaGothicOne text-lg text-acento">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ejem luis_mendoza@gmail.com" required
+            class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco">
+          </div>
+
+          <div class="mt-4">
+            <label for="whatsapp" class="font-DelaGothicOne text-lg text-acento">Whatsapp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Ejem +51 912 345 678" required
+            class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco">
+          </div>
+          
+          <div class="mt-4">
+            <label for="mensaje" class="font-DelaGothicOne text-lg text-acento">Mensaje</label>
+            <textarea  name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aqui..." rows="4" required 
+            class="w-full border border-acento rounded-2xl placeholder:text-acento p-4 font-Poppins mt-1.5 text-blanco"
+            ></textarea>
+          </div>
+          
+           <div class="mt-2">
+                <input type="checkbox" required>
+                <span class="text-blanco/70">Acepto  la política de protección  de <a href="/privacidad-de-datos" 
+                    class="text-blanco hover:underline">datos personales</a></span>
+           </div>
+
+           <button 
+           id="btnEnviarMensaje"
+           type="submit"
+           class="mt-4 w-full bg-primario p-4 font-Poppins font-bold text-base rounded-2xl text-white">
+            Quiero que me contacten
+           </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
