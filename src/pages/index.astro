@@ -5,15 +5,10 @@ import Header from "../components/Header.astro";
 import HeaderPc from "../components/HeaderPc.astro";
 import Layout from "../layouts/Layout.astro";
 
-
-
-
-import ImagenProyecto1 from "../assets/images/imagen-proyecto-1.png";
-import ImagenProyecto2 from "../assets/images/imagen-proyecto-2.png";
-import ImagenProyecto3 from "../assets/images/imagen-proyecto-3.png";
 import Contacto from "../components/Contacto.astro";
 import Hero from "../components/Hero.astro";
 import Footer from "../components/Footer.astro";
+import Proyectos from "../components/Proyectos.astro";
 ---
 
 <Layout>
@@ -21,25 +16,25 @@ import Footer from "../components/Footer.astro";
   <HeaderPc />
 
   <main class="w-full">
-    
-	<Hero />
+    <Hero />
     <section class="w-full bg-Odeg">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 p-3 gap-10">
         <div class="mt-24 lg:mt-32 flex flex-col gap-6 max-w-2xl">
           <!-- TÍTULO -->
           <h2
-            class="text-2xl lg:text-4xl uppercase
-             text-blanco font-DelaGothicOne
-             leading-tight"
+            class="text-3xl lg:text-5xl uppercase
+                text-blanco font-DelaGothicOne
+                leading-[1.1] tracking-wide"
           >
             ¿Por qué trabajar con
-            <span class="text-primario">nosotros</span>?
+            <span class="text-primario block">nosotros?</span>
           </h2>
 
           <!-- TEXTO -->
           <p
-            class="text-sm md:text-base lg:text-lg
-            text-blanco/90 font-light leading-relaxed"
+            class="text-base lg:text-lg
+       text-blanco/70
+       font-light leading-relaxed"
           >
             Muchas empresas pierden oportunidades por tener una presencia
             digital desactualizada, lenta o que no refleja el verdadero valor de
@@ -47,8 +42,9 @@ import Footer from "../components/Footer.astro";
           </p>
 
           <p
-            class="text-sm md:text-base lg:text-lg
-            text-blanco/90 font-light leading-relaxed"
+            class="text-base lg:text-lg
+       text-blanco/70
+       font-light leading-relaxed"
           >
             En KCM SMART desarrollamos sitios web informativos, rápidos y
             optimizados para SEO que fortalecen tu imagen, generan confianza y
@@ -56,8 +52,9 @@ import Footer from "../components/Footer.astro";
           </p>
 
           <p
-            class="text-sm md:text-base lg:text-lg
-            text-blanco/80 font-light leading-relaxed"
+            class="text-base lg:text-lg
+       text-blanco/70
+       font-light leading-relaxed"
           >
             Trabajamos con tecnología moderna como Astro, TypeScript y
             WordPress.
@@ -65,7 +62,7 @@ import Footer from "../components/Footer.astro";
 
           <!-- ESTADÍSTICAS -->
           <div
-            class="grid grid-cols-3 gap-6 mt-10 pt-6 border-t border-white/10"
+            class="grid grid-cols-3 gap-8 mt-14 pt-10 border-t border-white/10"
           >
             <article class="flex flex-col">
               <span
@@ -114,123 +111,153 @@ import Footer from "../components/Footer.astro";
           </div>
         </div>
 
-        <div class="mt-14 lg:mt-32
-						grid grid-cols-2
-						gap-4 lg:gap-6">
+        <div
+          class="mt-14 lg:mt-32
+            grid grid-cols-1 sm:grid-cols-2
+            gap-6 lg:gap-8"
+        >
+          <!-- 01 -->
           <article
-            class="h-full flex flex-col gap-4
-							border border-terciario
-							rounded-2xl p-5
-							transition-all duration-300
-							hover:border-primario
-							hover:-translate-y-1
-							hover:bg-white/5"
+            class="group h-full flex flex-col gap-5
+           border border-white/10
+           rounded-2xl p-6
+           transition-all duration-500
+           hover:border-primario
+           hover:-translate-y-2
+           hover:bg-white/5
+           hover:shadow-xl
+           hover:shadow-primario/10
+           lg:even:translate-y-10"
           >
             <Icon
               name="iconoir:coffee-cup"
-              class="size-7 text-terciario transition-colors duration-300 group-hover:text-primario"
+              class="size-7 text-terciario
+             transition-all duration-500
+             group-hover:text-primario
+             group-hover:scale-110"
             />
 
             <h3
-              class="text-terciario text-sm md:text-base lg:text-lg
-						font-DelaGothicOne leading-snug"
+              class="text-blanco text-base md:text-lg
+             font-DelaGothicOne leading-snug"
             >
               Confianza desde el primer vistazo
             </h3>
 
             <p
-              class="text-Blancogris text-xs md:text-sm lg:text-base
-						font-Poppins font-light leading-relaxed"
+              class="text-blanco/70 text-sm md:text-base
+             font-Poppins font-light leading-relaxed"
             >
               Proyecta autoridad y profesionalismo con una web clara,
               estructurada y alineada a tu marca.
             </p>
           </article>
 
+          <!-- 02 -->
           <article
-            class="h-full flex flex-col gap-4
-							border border-terciario
-							rounded-2xl p-5
-							transition-all duration-300
-							hover:border-primario
-							hover:-translate-y-1
-							hover:bg-white/5"
+            class="group h-full flex flex-col gap-5
+           border border-white/10
+           rounded-2xl p-6
+           transition-all duration-500
+           hover:border-primario
+           hover:-translate-y-2
+           hover:bg-white/5
+           hover:shadow-xl
+           hover:shadow-primario/10
+           lg:even:translate-y-10"
           >
             <Icon
               name="iconoir:security-pass"
-              class="size-7 text-terciario transition-colors duration-300 group-hover:text-primario"
+              class="size-7 text-terciario
+             transition-all duration-500
+             group-hover:text-primario
+             group-hover:scale-110"
             />
 
             <h3
-              class="text-terciario text-sm md:text-base lg:text-lg
-						font-DelaGothicOne leading-snug"
+              class="text-blanco text-base md:text-lg
+             font-DelaGothicOne leading-snug"
             >
               Recupera oportunidades
             </h3>
 
             <p
-              class="text-Blancogris text-xs md:text-sm lg:text-base
-						font-Poppins font-light leading-relaxed"
+              class="text-blanco/70 text-sm md:text-base
+             font-Poppins font-light leading-relaxed"
             >
               Evita perder clientes por una web lenta, desactualizada o poco
               profesional.
             </p>
           </article>
 
+          <!-- 03 -->
           <article
-            class="h-full flex flex-col gap-4
-							border border-terciario
-							rounded-2xl p-5
-							transition-all duration-300
-							hover:border-primario
-							hover:-translate-y-1
-							hover:bg-white/5"
+            class="group h-full flex flex-col gap-5
+           border border-white/10
+           rounded-2xl p-6
+           transition-all duration-500
+           hover:border-primario
+           hover:-translate-y-2
+           hover:bg-white/5
+           hover:shadow-xl
+           hover:shadow-primario/10
+           lg:even:translate-y-10"
           >
             <Icon
               name="iconoir:finder"
-              class="size-7 text-terciario transition-colors duration-300 group-hover:text-primario"
+              class="size-7 text-terciario
+             transition-all duration-500
+             group-hover:text-primario
+             group-hover:scale-110"
             />
 
             <h3
-              class="text-terciario text-sm md:text-base lg:text-lg
-						font-DelaGothicOne leading-snug"
+              class="text-blanco text-base md:text-lg
+             font-DelaGothicOne leading-snug"
             >
               Acompañamiento real
             </h3>
 
             <p
-              class="text-Blancogris text-xs md:text-sm lg:text-base
-						font-Poppins font-light leading-relaxed"
+              class="text-blanco/70 text-sm md:text-base
+             font-Poppins font-light leading-relaxed"
             >
               Soporte antes, durante y después del lanzamiento para mantener tu
               sitio siempre optimizado.
             </p>
           </article>
 
+          <!-- 04 -->
           <article
-            class="h-full flex flex-col gap-4
-							border border-terciario
-							rounded-2xl p-5
-							transition-all duration-300
-							hover:border-primario
-							hover:-translate-y-1
-							hover:bg-white/5"
+            class="group h-full flex flex-col gap-5
+           border border-white/10
+           rounded-2xl p-6
+           transition-all duration-500
+           hover:border-primario
+           hover:-translate-y-2
+           hover:bg-white/5
+           hover:shadow-xl
+           hover:shadow-primario/10
+           lg:even:translate-y-10"
           >
             <Icon
               name="iconoir:stat-up"
-              class="size-7 text-terciario transition-colors duration-300 group-hover:text-primario"
+              class="size-7 text-terciario
+             transition-all duration-500
+             group-hover:text-primario
+             group-hover:scale-110"
             />
 
             <h3
-              class="text-terciario text-sm md:text-base lg:text-lg
-						font-DelaGothicOne leading-snug"
+              class="text-blanco text-base md:text-lg
+             font-DelaGothicOne leading-snug"
             >
               Crecimiento estratégico
             </h3>
 
             <p
-              class="text-Blancogris text-xs md:text-sm lg:text-base
-						font-Poppins font-light leading-relaxed"
+              class="text-blanco/70 text-sm md:text-base
+             font-Poppins font-light leading-relaxed"
             >
               Sitio optimizado para posicionar en Google y acompañar el
               crecimiento de tu negocio.
@@ -240,16 +267,19 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <div
-        class="max-w-4xl w-full flex justify-center mx-auto mt-32 text-blanco font-extralight"
+        class="max-w-5xl w-full flex justify-center
+         mx-auto mt-40 px-6"
       >
         <span
-          class="font-Poppins text-xl lg:text-5xl text-center
-             bg-linear-to-r from-Vdeg via-Rdeg to-Odeg
-             bg-size-[200%_200%]
-             bg-clip-text text-transparent
-             animate-gradient-x"
+          class="font-Poppins font-light
+           text-2xl lg:text-6xl
+           text-center
+           bg-linear-to-r from-primario via-secundario to-terciario
+           bg-size-[200%_200%]
+           bg-clip-text text-transparent
+           animate-gradient-x"
         >
-          “Me especializo en desarrollo web informativos o institucionales”
+          “Me especializo en desarrollo web informativo e institucional”
         </span>
       </div>
     </section>
@@ -258,16 +288,17 @@ import Footer from "../components/Footer.astro";
       <div class="w-full max-w-7xl mx-auto mt-32">
         <div class="flex flex-col gap-5 md:items-center">
           <h2
-            class="text-2xl lg:text-4xl uppercase
-             text-blanco font-DelaGothicOne
-             leading-tight"
+            class="text-3xl lg:text-5xl uppercase
+         text-blanco font-DelaGothicOne
+         leading-[1.1] tracking-wide"
           >
             Esto incluye en
-            <span class="text-primario">mis servicios</span>
+            <span class="text-primario block">mis servicios</span>
           </h2>
           <p
-            class="text-sm md:text-base lg:text-lg
-            text-blanco/90 font-light leading-relaxed"
+            class="mt-6 text-blanco/70
+         text-base lg:text-lg
+         leading-relaxed max-w-2xl"
           >
             Una web bien hecha, moderna, rápida y optimizada para mostrar lo que
             ofreces.
@@ -276,120 +307,310 @@ import Footer from "../components/Footer.astro";
 
         <div class="w-full mt-5 lg:mt-20 flex flex-col items-start gap-7">
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center
+         gap-4 py-6
+         border-b border-acento/20
+         group cursor-pointer
+         transition-all duration-500
+         hover:border-primario
+         hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">01</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              SEO técnico optimizado
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300
+             group-hover:text-secundario group-hover:scale-110"
+              >
+                01
+              </span>
+
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase
+             text-grisClaro transition-all duration-500
+             group-hover:text-blanco"
+              >
+                SEO técnico optimizado
+              </p>
+            </div>
+
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500
+           group-hover:opacity-100 group-hover:translate-x-2"
+            >
+              →
+            </span>
           </div>
 
+          <!-- 02 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">02</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              Investigación de palabras clave
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >02</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Investigación de palabras clave
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 03 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">03</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              Copywriting e imágenes
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >03</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Copywriting estratégico e imágenes optimizadas
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 04 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">04</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              prototipo personalizado
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >04</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Prototipo personalizado
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 05 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">05</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              Diseño moderno y responsive
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >05</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Diseño moderno y responsive
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 06 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">06</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              Integración de Google Analytics
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >06</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Integración de Google Analytics
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 06 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">07</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              Formulario de contacto
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >06</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Integración de Google Analytics
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 07 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">08</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              Libro de reclamaciones
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >07</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Formulario de contacto optimizado
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 08 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">09</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              Correo profesional con tu dominio
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >08</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Libro de reclamaciones digital
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 09 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">10</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              Integración de redes sociales
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >09</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Correo profesional con tu dominio
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 10 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">11</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              OPTIMIZACIÓN DE CARGA
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >10</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Integración de redes sociales
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 11 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">12</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              PoLÍTICA DE PRIVACIDAD Y POPUP
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >11</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Optimización avanzada de carga
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
 
+          <!-- 12 -->
           <div
-            class="w-full flex gap-4 text-grisClaro font-Poppins uppercase items-center py-4 border-b border-acento/30 group hover:border-primario"
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
           >
-            <span class="text-[12px] group-hover:text-secundario">13</span>
-            <p class="text-base font-bold group-hover:text-blanco lg:text-6xl">
-              y MUCHO MÁS
-            </p>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >12</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Política de privacidad y popup legal
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
+          </div>
+
+          <!-- 13 -->
+          <div
+            class="w-full flex justify-between items-center gap-4 py-6 border-b border-acento/20 group cursor-pointer transition-all duration-500 hover:border-primario hover:pl-6"
+          >
+            <div class="flex items-center gap-4">
+              <span
+                class="text-xs text-grisClaro transition-all duration-300 group-hover:text-secundario group-hover:scale-110"
+                >13</span
+              >
+              <p
+                class="text-base lg:text-5xl font-bold font-Poppins uppercase text-grisClaro transition-all duration-500 group-hover:text-blanco"
+              >
+                Y mucho más
+              </p>
+            </div>
+            <span
+              class="text-grisClaro opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2"
+              >→</span
+            >
           </div>
         </div>
 
@@ -429,251 +650,9 @@ import Footer from "../components/Footer.astro";
       </div>
     </section>
 
-    <section
-      class="w-full bg-linear-to-b from-0% from-Odeg to-100 via-50 via-Vdeg to-100% to-Odeg"
-    >
-      <div class="max-w-7xl mx-auto p-3 flex flex-col items-center">
-        <div class="mt-32">
-          <h2
-            class="text-2xl lg:text-4xl uppercase
-             text-blanco font-DelaGothicOne
-             leading-tight"
-          >
-            Proyectos
-            <span class="text-primario">realizados</span>
-          </h2>
-          <p
-            class="text-sm md:text-base lg:text-lg
-            text-blanco/90 font-light leading-relaxed"
-          >
-            Una web bien hecha, moderna, rápida y optimizada para mostrar lo que
-            ofreces.
-          </p>
-        </div>
+    <Proyectos />
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
-          <article
-            class="flex flex-col group transition-all duration-500 hover:-translate-y-2"
-          >
-            <!-- Imagen -->
-            <div class="overflow-hidden rounded-t-4xl rounded-br-4xl">
-              <Image
-                src={ImagenProyecto1}
-                alt="Imagen proyecto 1"
-                width={350}
-                height={320}
-                class="rounded-t-4xl rounded-br-4xl w-full h-auto
-             transition-transform duration-700 ease-[cubic-bezier(.22,1,.36,1)]
-             group-hover:scale-105"
-              />
-            </div>
-
-            <!-- Título -->
-            <div
-              class="py-5 flex flex-col items-center justify-center
-           border border-acento
-           rounded-bl-4xl rounded-tr-4xl
-           bg-transparent
-           transition-all duration-500
-           group-hover:bg-white"
-            >
-              <h3
-                class="text-blanco text-2xl font-DelaGothicOne
-             transition-colors duration-500
-             group-hover:text-black"
-              >
-                Aurum Customs
-              </h3>
-            </div>
-
-            <!-- Descripción -->
-            <div
-              class="py-6 flex flex-col items-center justify-center
-           border border-acento
-           rounded-tl-4xl rounded-b-4xl p-6
-           transition-all duration-500
-           bg-transparent
-           group-hover:bg-white"
-            >
-              <p
-                class="text-blanco text-base font-light
-             text-center leading-relaxed
-             transition-colors duration-500
-             group-hover:text-black"
-              >
-                Diseño y desarrollo del sitio aplicando la identidad de marca en
-                un diseño profesional y moderno
-              </p>
-
-              <!-- Botón Destacado -->
-              <a
-                href="#"
-                class="w-full mt-6 py-3
-              rounded-2xl flex justify-center
-              font-Poppins font-semibold
-              transition-all duration-300
-              bg-white text-black
-              shadow-lg
-              hover:-translate-y-1
-              hover:scale-[1.02]
-              active:scale-[0.98]"
-              >
-                Visitar sitio →
-              </a>
-            </div>
-          </article>
-
-		   <article
-            class="flex flex-col group transition-all duration-500 hover:-translate-y-2"
-          >
-            <!-- Imagen -->
-            <div class="overflow-hidden rounded-t-4xl rounded-br-4xl">
-              <Image
-                src={ImagenProyecto2}
-                alt="Imagen proyecto 2"
-                width={350}
-                height={320}
-                class="rounded-t-4xl rounded-br-4xl w-full h-auto
-             transition-transform duration-700 ease-[cubic-bezier(.22,1,.36,1)]
-             group-hover:scale-105"
-              />
-            </div>
-
-            <!-- Título -->
-            <div
-              class="py-5 flex flex-col items-center justify-center
-           border border-acento
-           rounded-bl-4xl rounded-tr-4xl
-           bg-transparent
-           transition-all duration-500
-           group-hover:bg-white"
-            >
-              <h3
-                class="text-blanco text-2xl font-DelaGothicOne
-             transition-colors duration-500
-             group-hover:text-black"
-              >
-                Aurum Metals
-              </h3>
-            </div>
-
-            <!-- Descripción -->
-            <div
-              class="py-6 flex flex-col items-center justify-center
-           border border-acento
-           rounded-tl-4xl rounded-b-4xl p-6
-           transition-all duration-500
-           bg-transparent
-           group-hover:bg-white"
-            >
-              <p
-                class="text-blanco text-base font-light
-             text-center leading-relaxed
-             transition-colors duration-500
-             group-hover:text-black"
-              >
-                Diseño y desarrollo del sitio aplicando la identidad de marca en
-                un diseño profesional y moderno
-              </p>
-
-              <!-- Botón Destacado -->
-              <a
-                href="#"
-                class="w-full mt-6 py-3
-              rounded-2xl flex justify-center
-              font-Poppins font-semibold
-              transition-all duration-300
-              bg-white text-black
-              shadow-lg
-              hover:-translate-y-1
-              hover:scale-[1.02]
-              active:scale-[0.98]"
-              >
-                Visitar sitio →
-              </a>
-            </div>
-          </article>
-
-
-
-		   <article
-            class="flex flex-col group transition-all duration-500 hover:-translate-y-2"
-          >
-            <!-- Imagen -->
-            <div class="overflow-hidden rounded-t-4xl rounded-br-4xl">
-              <Image
-                src={ImagenProyecto3}
-                alt="Imagen proyecto 3"
-                width={350}
-                height={320}
-                class="rounded-t-4xl rounded-br-4xl w-full h-auto
-             transition-transform duration-700 ease-[cubic-bezier(.22,1,.36,1)]
-             group-hover:scale-105"
-              />
-            </div>
-
-            <!-- Título -->
-            <div
-              class="py-5 flex flex-col items-center justify-center
-           border border-acento
-           rounded-bl-4xl rounded-tr-4xl
-           bg-transparent
-           transition-all duration-500
-           group-hover:bg-white"
-            >
-              <h3
-                class="text-blanco text-2xl font-DelaGothicOne
-             transition-colors duration-500
-             group-hover:text-black"
-              >
-                Cuotitas
-              </h3>
-            </div>
-
-            <!-- Descripción -->
-            <div
-              class="py-6 flex flex-col items-center justify-center
-           border border-acento
-           rounded-tl-4xl rounded-b-4xl p-6
-           transition-all duration-500
-           bg-transparent
-           group-hover:bg-white"
-            >
-              <p
-                class="text-blanco text-base font-light
-             text-center leading-relaxed
-             transition-colors duration-500
-             group-hover:text-black"
-              >
-                Diseño y desarrollo del sitio aplicando la identidad de marca en
-                un diseño profesional y moderno
-              </p>
-
-              <!-- Botón Destacado -->
-              <a
-                href="#"
-                class="w-full mt-6 py-3
-              rounded-2xl flex justify-center
-              font-Poppins font-semibold
-              transition-all duration-300
-              bg-white text-black
-              shadow-lg
-              hover:-translate-y-1
-              hover:scale-[1.02]
-              active:scale-[0.98]"
-              >
-                Visitar sitio →
-              </a>
-            </div>
-          </article>
-
-
-
-        </div>
-      </div>
-    </section>
-
-	<Contacto />
+    <Contacto />
   </main>
-   <Footer />
+  <Footer />
 </Layout>

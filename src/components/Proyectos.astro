@@ -1,0 +1,273 @@
+---
+
+
+import { Image } from "astro:assets";
+import ImagenProyecto1 from "../assets/images/imagen-proyecto-1.png";
+import ImagenProyecto2 from "../assets/images/imagen-proyecto-2.png";
+import ImagenProyecto3 from "../assets/images/imagen-proyecto-3.png";
+---
+
+    <section
+      class="w-full bg-linear-to-b from-0% from-Odeg to-100 via-50 via-Vdeg to-100% to-Vdeg"
+    >
+      <div class="max-w-7xl mx-auto p-3 flex flex-col items-center">
+        <div class="mt-32">
+          <h2
+            class="text-3xl lg:text-5xl uppercase text-center   
+           text-blanco font-DelaGothicOne
+           tracking-wider leading-[1.1]"
+          >
+            Proyectos
+            <span class="text-secundario block">realizados</span>
+          </h2>
+          <p
+            class="text-sm md:text-base lg:text-lg
+            text-blanco/90 font-light leading-relaxed"
+          >
+            Una web bien hecha, moderna, rápida y optimizada para mostrar lo que
+            ofreces.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-16">
+          <article
+  class="flex flex-col group 
+         transition-all duration-500 
+         hover:-translate-y-3"
+>
+
+  <!-- Imagen -->
+  <div class="overflow-hidden rounded-t-4xl rounded-br-4xl">
+    <Image
+      src={ImagenProyecto1}
+      alt="Imagen proyecto 1"
+      width={350}
+      height={320}
+      class="rounded-t-4xl rounded-br-4xl w-full h-auto
+             transition-transform duration-700 ease-[cubic-bezier(.22,1,.36,1)]
+             group-hover:scale-105"
+    />
+  </div>
+
+  <!-- Título -->
+  <div
+    class="py-6 flex flex-col items-center justify-center
+           border border-acento
+           rounded-bl-4xl rounded-tr-4xl
+           bg-transparent
+           transition-all duration-500
+           group-hover:bg-white/5
+           group-hover:border-secundario
+           group-hover:shadow-lg
+           group-hover:shadow-primario/10"
+  >
+    <h3
+      class="text-blanco text-2xl font-DelaGothicOne
+             tracking-wide"
+    >
+      Aurum Customs
+    </h3>
+  </div>
+
+  <!-- Descripción -->
+  <div
+    class="py-8 flex flex-col items-center justify-center
+           border border-acento
+           rounded-tl-4xl rounded-b-4xl p-6
+           bg-transparent
+           transition-all duration-500
+           group-hover:bg-white/5
+           group-hover:border-secundario
+           group-hover:shadow-xl
+           group-hover:shadow-primario/10"
+  >
+    <p
+      class="text-blanco/80 text-base font-light
+             text-center leading-relaxed"
+    >
+      Diseño y desarrollo del sitio aplicando la identidad de marca en
+      un diseño profesional y moderno
+    </p>
+
+    <!-- Botón mejorado -->
+    <a
+      href="#"
+      class="w-full mt-8 py-3
+             rounded-2xl flex justify-center
+             font-Poppins font-semibold
+             transition-all duration-300
+             bg-primario text-white
+             hover:bg-secundario
+             hover:scale-[1.03]
+             hover:shadow-lg hover:shadow-primario/30
+             active:scale-[0.98]"
+    >
+      Visitar sitio →
+    </a>
+  </div>
+
+</article>
+
+<article
+  class="flex flex-col group 
+         transition-all duration-500 
+         hover:-translate-y-3"
+>
+
+  <!-- Imagen -->
+  <div class="overflow-hidden rounded-t-4xl rounded-br-4xl">
+    <Image
+      src={ImagenProyecto2}
+      alt="Imagen proyecto 1"
+      width={350}
+      height={320}
+      class="rounded-t-4xl rounded-br-4xl w-full h-auto
+             transition-transform duration-700 ease-[cubic-bezier(.22,1,.36,1)]
+             group-hover:scale-105"
+    />
+  </div>
+
+  <!-- Título -->
+  <div
+    class="py-6 flex flex-col items-center justify-center
+           border border-acento
+           rounded-bl-4xl rounded-tr-4xl
+           bg-transparent
+           transition-all duration-500
+           group-hover:bg-white/5
+           group-hover:border-secundario
+           group-hover:shadow-lg
+           group-hover:shadow-primario/10"
+  >
+    <h3
+      class="text-blanco text-2xl font-DelaGothicOne
+             tracking-wide"
+    >
+      Aurum Metals
+    </h3>
+  </div>
+
+  <!-- Descripción -->
+  <div
+    class="py-8 flex flex-col items-center justify-center
+           border border-acento
+           rounded-tl-4xl rounded-b-4xl p-6
+           bg-transparent
+           transition-all duration-500
+           group-hover:bg-white/5
+           group-hover:border-secundario
+           group-hover:shadow-xl
+           group-hover:shadow-primario/10"
+  >
+    <p
+      class="text-blanco/80 text-base font-light
+             text-center leading-relaxed"
+    >
+      Diseño y desarrollo del sitio aplicando la identidad de marca en
+      un diseño profesional y moderno
+    </p>
+
+    <!-- Botón mejorado -->
+    <a
+      href="#"
+      class="w-full mt-8 py-3
+             rounded-2xl flex justify-center
+             font-Poppins font-semibold
+             transition-all duration-300
+             bg-primario text-white
+             hover:bg-secundario
+             hover:scale-[1.03]
+             hover:shadow-lg hover:shadow-primario/30
+             active:scale-[0.98]"
+    >
+      Visitar sitio →
+    </a>
+  </div>
+
+</article>
+
+
+
+<article
+  class="flex flex-col group 
+         transition-all duration-500 
+         hover:-translate-y-3"
+>
+
+  <!-- Imagen -->
+  <div class="overflow-hidden rounded-t-4xl rounded-br-4xl">
+    <Image
+      src={ImagenProyecto3}
+      alt="Imagen proyecto 1"
+      width={350}
+      height={320}
+      class="rounded-t-4xl rounded-br-4xl w-full h-auto
+             transition-transform duration-700 ease-[cubic-bezier(.22,1,.36,1)]
+             group-hover:scale-105"
+    />
+  </div>
+
+  <!-- Título -->
+  <div
+    class="py-6 flex flex-col items-center justify-center
+           border border-acento
+           rounded-bl-4xl rounded-tr-4xl
+           bg-transparent
+           transition-all duration-500
+           group-hover:bg-white/5
+           group-hover:border-secundario
+           group-hover:shadow-lg
+           group-hover:shadow-primario/10"
+  >
+    <h3
+      class="text-blanco text-2xl font-DelaGothicOne
+             tracking-wide"
+    >
+      Aurum Customs
+    </h3>
+  </div>
+
+  <!-- Descripción -->
+  <div
+    class="py-8 flex flex-col items-center justify-center
+           border border-acento
+           rounded-tl-4xl rounded-b-4xl p-6
+           bg-transparent
+           transition-all duration-500
+           group-hover:bg-white/5
+           group-hover:border-secundario
+           group-hover:shadow-xl
+           group-hover:shadow-primario/10"
+  >
+    <p
+      class="text-blanco/80 text-base font-light
+             text-center leading-relaxed"
+    >
+      Diseño y desarrollo del sitio aplicando la identidad de marca en
+      un diseño profesional y moderno
+    </p>
+
+    <!-- Botón mejorado -->
+    <a
+      href="#"
+      class="w-full mt-8 py-3
+             rounded-2xl flex justify-center
+             font-Poppins font-semibold
+             transition-all duration-300
+             bg-primario text-white
+             hover:bg-secundario
+             hover:scale-[1.03]
+             hover:shadow-lg hover:shadow-primario/30
+             active:scale-[0.98]"
+    >
+      Visitar sitio →
+    </a>
+  </div>
+
+</article>
+
+
+
+        </div>
+      </div>
+    </section>

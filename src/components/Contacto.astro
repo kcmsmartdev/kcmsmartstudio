@@ -1,18 +1,17 @@
 ---
 import { Icon } from "astro-icon/components";
-
 ---
 
 <section class="bg-linear-to-b from-0% from-Vdeg to-100% to-Odeg">
   <div class="max-w-7xl mx-auto p-3 grid grid-cols-1 lg:grid-cols-2 gap-10">
-    <div class="mt-32">
+    <div class="pt-28 pb-10">
       <h2
-        class="text-2xl lg:text-4xl uppercase
-             text-blanco font-DelaGothicOne
-             leading-tight"
+        class="text-3xl lg:text-5xl uppercase
+           text-blanco font-DelaGothicOne
+           tracking-wider leading-[1.1]"
       >
         PREGUNTAS
-        <span class="text-secundario">FRECUENTES</span>
+        <span class="text-secundario block">FRECUENTES</span>
       </h2>
 
       <div id="faq" class="flex flex-col divide-y divide-acento/30">
@@ -22,7 +21,7 @@ import { Icon } from "astro-icon/components";
         >
           <button class="w-full flex justify-between items-center text-left">
             <div class="flex gap-4 items-center">
-              <span class="text-sm text-acento">01</span>
+              <span class="text-sm font-medium text-secundario/70">01</span>
               <p
                 class="font-Poppins text-base text-acento group-hover:text-blanco transition"
               >
@@ -62,7 +61,7 @@ import { Icon } from "astro-icon/components";
         >
           <button class="w-full flex justify-between items-center text-left">
             <div class="flex gap-4 items-center">
-              <span class="text-sm text-acento">02</span>
+              <span class="text-sm font-medium text-secundario/70">02</span>
               <p
                 class="font-Poppins text-base text-acento group-hover:text-blanco transition"
               >
@@ -101,7 +100,7 @@ import { Icon } from "astro-icon/components";
         >
           <button class="w-full flex justify-between items-center text-left">
             <div class="flex gap-4 items-center">
-              <span class="text-sm text-acento">03</span>
+              <span class="text-sm font-medium text-secundario/70">03</span>
               <p
                 class="font-Poppins text-base text-acento group-hover:text-blanco transition"
               >
@@ -139,7 +138,7 @@ import { Icon } from "astro-icon/components";
         >
           <button class="w-full flex justify-between items-center text-left">
             <div class="flex gap-4 items-center">
-              <span class="text-sm text-acento">04</span>
+              <span class="text-sm font-medium text-secundario/70">04</span>
               <p
                 class="font-Poppins text-base text-acento group-hover:text-blanco transition"
               >
@@ -174,26 +173,32 @@ import { Icon } from "astro-icon/components";
         </div>
       </div>
 
-      <div class="mt-10">
+      <div class="mt-16">
         <h2
-          class="text-2xl lg:text-4xl uppercase
-             text-blanco font-DelaGothicOne
-             leading-tight"
+          class="text-3xl lg:text-5xl uppercase
+           text-blanco font-DelaGothicOne
+           tracking-wider leading-[1.1]"
         >
           MEDIOS DE
-          <span class="text-secundario">cONTACTO</span>
+          <span class="text-secundario block">CONTACTO</span>
         </h2>
 
-        <div class="mt-7">
+        <div class="flex flex-col gap-5 mt-7">
           <a
             href="#"
-            class="tex-negro font-DelaGothicOne text-xl py-4 justify-start gap-4 items-center rounded-full px-7 bg-terciario flex"
+            class="tex-negro font-medium font-Poppins text-base lg:text-xl py-4 justify-start gap-4 items-center
+            rounded-full px-7 flex bg-terciario hover:bg-secundario
+            transition-all duration-300
+            shadow-lg shadow-secundario/10 hover:scale-[1.02]"
           >
             <Icon name="iconoir:whatsapp-solid" /> +51 935 437 820</a
           >
           <a
             href="#"
-            class="mt-4 tex-negro font-DelaGothicOne uppercase text-xl py-4 justify-start gap-4 items-center rounded-full px-7 bg-terciario flex"
+            class="tex-negro font-Poppins font-medium text-base lg:text-xl py-4 justify-start gap-4 items-center
+            rounded-full px-7 flex bg-terciario hover:bg-secundario
+            transition-all duration-300
+            shadow-lg shadow-secundario/10 hover:scale-[1.02]"
           >
             <Icon name="iconoir:mail-solid" /> contacto@kcmsmart.com</a
           >
@@ -203,9 +208,9 @@ import { Icon } from "astro-icon/components";
 
     <div class="mt-32">
       <h2
-        class="text-2xl lg:text-4xl uppercase
-             text-secundario font-DelaGothicOne
-             leading-tight"
+        class="text-3xl lg:text-5xl uppercase
+           text-blanco font-DelaGothicOne
+           tracking-wider leading-[1.1]"
       >
         ESCRÍBENOS
       </h2>
@@ -228,13 +233,22 @@ import { Icon } from "astro-icon/components";
               name="nombre"
               placeholder="Ejem Luis Mendoza"
               required
-              class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco"
+              class="w-full p-4 rounded-xl 
+              border border-acento/50 
+              bg-white/5
+              focus:border-secundario 
+              focus:ring-2 focus:ring-secundario/30
+              outline-none
+              transition-all duration-200
+              mt-2
+              placeholder:text-acento/60
+              font-Poppins text-base text-blanco"
             />
           </div>
 
           <div class="mt-4">
             <label for="email" class="font-DelaGothicOne text-lg text-acento"
-              >Email</label
+              >EMAIL</label
             >
             <input
               type="email"
@@ -242,13 +256,22 @@ import { Icon } from "astro-icon/components";
               name="email"
               placeholder="Ejem luis_mendoza@gmail.com"
               required
-              class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco"
+              class="w-full p-4 rounded-xl 
+              border border-acento/50 
+              bg-white/5
+              focus:border-secundario 
+              focus:ring-2 focus:ring-secundario/30
+              outline-none
+              transition-all duration-200
+              mt-2
+              placeholder:text-acento/60
+              font-Poppins text-base text-blanco"
             />
           </div>
 
           <div class="mt-4">
             <label for="whatsapp" class="font-DelaGothicOne text-lg text-acento"
-              >Whatsapp</label
+              >WHATASAPP</label
             >
             <input
               type="tel"
@@ -256,13 +279,22 @@ import { Icon } from "astro-icon/components";
               name="whatsapp"
               placeholder="Ejem +51 912 345 678"
               required
-              class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco"
+              class="w-full p-4 rounded-xl 
+              border border-acento/50 
+              bg-white/5
+              focus:border-secundario 
+              focus:ring-2 focus:ring-secundario/30
+              outline-none
+              transition-all duration-200
+              mt-2
+              placeholder:text-acento/60
+              font-Poppins text-base text-blanco"
             />
           </div>
 
           <div class="mt-4">
             <label for="mensaje" class="font-DelaGothicOne text-lg text-acento"
-              >Mensaje</label
+              >MENSAJE</label
             >
             <textarea
               name="mensaje"
@@ -270,7 +302,16 @@ import { Icon } from "astro-icon/components";
               placeholder="Escribe tu mensaje aqui..."
               rows="4"
               required
-              class="w-full border border-acento rounded-2xl placeholder:text-acento p-4 font-Poppins mt-1.5 text-blanco"
+              class="w-full p-4 rounded-xl 
+              border border-acento/50 
+              bg-white/5
+              focus:border-secundario 
+              focus:ring-2 focus:ring-secundario/30
+              outline-none
+              transition-all duration-200
+              mt-2
+              placeholder:text-acento/60
+              font-Poppins text-base text-blanco"
             ></textarea>
           </div>
 
@@ -287,7 +328,18 @@ import { Icon } from "astro-icon/components";
           <button
             id="btnEnviarMensaje"
             type="submit"
-            class="mt-4 w-full bg-primario p-4 font-Poppins font-bold text-base rounded-2xl text-white"
+            class="mt-6 w-full
+            bg-btn
+            hover:bg-primario
+            transition-all duration-300
+            py-4
+            font-Poppins font-semibold
+            text-base
+            rounded-xl
+            text-white
+            shadow-lg shadow-primario/20
+            hover:shadow-primario/40
+            hover:-translate-y-1"
           >
             Quiero que me contacten
           </button>
