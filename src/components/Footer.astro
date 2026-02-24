@@ -1,0 +1,33 @@
+---
+import ImagenLogo from "../assets/images/KCMSMART.png";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+---
+
+<footer class="bg-Odeg w-full">
+  <div class="max-w-7xl mx-auto p-3">
+    <Image src={ImagenLogo} alt="Imagen Logo" class="w-full h-auto mt-32" />
+
+    <div class="flex flex-row items-center lg:items-start gap-4 mt-16 mb-5">
+      <a href=""
+        ><Icon name="iconoir:instagram" class="size-6 text-secundario" />
+      </a>
+
+      <a href=""
+        ><Icon name="iconoir:facebook-tag" class="size-6 text-secundario" />
+      </a>
+
+      <a href=""
+        ><Icon name="iconoir:tiktok" class="size-6 text-secundario" />
+      </a>
+    </div>
+    <div class="py-5 border-t border-acento/30 flex flex-col lg:flex-row justify-between items-center">
+        <p class="text-blanco/80 text-base">© <a href="">KCMSMART.COM</a> {new Date().getFullYear()} | Todos los derechos reservados</p>
+        <ul class="flex flex-row gap-4 justify-center items-center">
+            <li><a href="/" class="text-sm text-acento font-Poppins"><span class="hidden lg:block">Términos y condiciones</span> <span class="flex lg:hidden">T&C</span></a></li> 
+            <li><a href="/" class="text-sm text-acento font-Poppins">Política de cookies</a></li>
+            <li><a href="/" class="text-sm text-acento font-Poppins">Privacidad de datos</a></li>
+        </ul>
+    </div>
+  </div>
+</footer>

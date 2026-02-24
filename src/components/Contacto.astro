@@ -1,9 +1,10 @@
 ---
+import { Icon } from "astro-icon/components";
 
 ---
 
 <section class="bg-linear-to-b from-0% from-Vdeg to-100% to-Odeg">
-  <div class="max-w-7xl mx-auto p-3 grid grid-cols-1 lg:grid-cols-2 gap-5">
+  <div class="max-w-7xl mx-auto p-3 grid grid-cols-1 lg:grid-cols-2 gap-10">
     <div class="mt-32">
       <h2
         class="text-2xl lg:text-4xl uppercase
@@ -13,6 +14,191 @@
         PREGUNTAS
         <span class="text-secundario">FRECUENTES</span>
       </h2>
+
+      <div id="faq" class="flex flex-col divide-y divide-acento/30">
+        <!-- 01 -->
+        <div
+          class="faq-item group py-6 px-4 cursor-pointer transition hover:bg-white/5 rounded-lg"
+        >
+          <button class="w-full flex justify-between items-center text-left">
+            <div class="flex gap-4 items-center">
+              <span class="text-sm text-acento">01</span>
+              <p
+                class="font-Poppins text-base text-acento group-hover:text-blanco transition"
+              >
+                ¿Cuánto tiempo demora el desarrollo?
+              </p>
+            </div>
+
+            <svg
+              class="w-7 h-7 text-acento transition-transform duration-300 group-hover:text-blanco"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+          <div
+            class="faq-content overflow-hidden max-h-0 transition-all duration-300"
+          >
+            <p class="text-blanco font-Poppins pt-4 leading-relaxed">
+              El tiempo de entrega para un proyecto de desarrollo web es de 7 a
+              10 días hábiles, dependiendo del alcance, funcionalidades y nivel
+              de personalización requerido. Antes de iniciar, definimos
+              claramente los objetivos para cumplir con los plazos establecidos.
+            </p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div
+          class="faq-item group py-6 px-4 cursor-pointer transition hover:bg-white/5 rounded-lg"
+        >
+          <button class="w-full flex justify-between items-center text-left">
+            <div class="flex gap-4 items-center">
+              <span class="text-sm text-acento">02</span>
+              <p
+                class="font-Poppins text-base text-acento group-hover:text-blanco transition"
+              >
+                ¿Debo pagar el monto total al inicio?
+              </p>
+            </div>
+
+            <svg
+              class="w-7 h-7 text-acento transition-transform duration-300 group-hover:text-blanco"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+          <div
+            class="faq-content overflow-hidden max-h-0 transition-all duration-300"
+          >
+            <p class="text-blanco font-Poppins pt-4 leading-relaxed">
+              Para garantizar compromiso y transparencia, se paga el 50% al
+              iniciar el proyecto y el 50% restante al finalizar antes de la
+              entrega final.
+            </p>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div
+          class="faq-item group py-6 px-4 cursor-pointer transition hover:bg-white/5 rounded-lg"
+        >
+          <button class="w-full flex justify-between items-center text-left">
+            <div class="flex gap-4 items-center">
+              <span class="text-sm text-acento">03</span>
+              <p
+                class="font-Poppins text-base text-acento group-hover:text-blanco transition"
+              >
+                ¿Qué medios de pago aceptas?
+              </p>
+            </div>
+
+            <svg
+              class="w-7 h-7 text-acento transition-transform duration-300 group-hover:text-blanco"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+          <div
+            class="faq-content overflow-hidden max-h-0 transition-all duration-300"
+          >
+            <p class="text-blanco font-Poppins pt-4 leading-relaxed">
+              A nivel nacional acepto transferencia bancaria (BCP) y Yape. Para
+              pagos internacionales trabajo con PayPal.
+            </p>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div
+          class="faq-item group py-6 px-4 cursor-pointer transition hover:bg-white/5 rounded-lg"
+        >
+          <button class="w-full flex justify-between items-center text-left">
+            <div class="flex gap-4 items-center">
+              <span class="text-sm text-acento">04</span>
+              <p
+                class="font-Poppins text-base text-acento group-hover:text-blanco transition"
+              >
+                ¿Con qué tecnología trabajas?
+              </p>
+            </div>
+
+            <svg
+              class="w-7 h-7 text-acento transition-transform duration-300 group-hover:text-blanco"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+          <div
+            class="faq-content overflow-hidden max-h-0 transition-all duration-300"
+          >
+            <p class="text-blanco font-Poppins pt-4 leading-relaxed">
+              Desarrollo sitios web con WordPress y Astro (desarrollo a medida
+              en código). Selecciono la tecnología según las necesidades del
+              proyecto para garantizar rendimiento, seguridad y optimización
+              SEO.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <h2
+          class="text-2xl lg:text-4xl uppercase
+             text-blanco font-DelaGothicOne
+             leading-tight"
+        >
+          MEDIOS DE
+          <span class="text-secundario">cONTACTO</span>
+        </h2>
+
+        <div class="mt-7">
+          <a
+            href="#"
+            class="tex-negro font-DelaGothicOne text-xl py-4 justify-start gap-4 items-center rounded-full px-7 bg-terciario flex"
+          >
+            <Icon name="iconoir:whatsapp-solid" /> +51 935 437 820</a
+          >
+          <a
+            href="#"
+            class="mt-4 tex-negro font-DelaGothicOne uppercase text-xl py-4 justify-start gap-4 items-center rounded-full px-7 bg-terciario flex"
+          >
+            <Icon name="iconoir:mail-solid" /> contacto@kcmsmart.com</a
+          >
+        </div>
+      </div>
     </div>
 
     <div class="mt-32">
@@ -21,10 +207,10 @@
              text-secundario font-DelaGothicOne
              leading-tight"
       >
-        CONTÁCTANOS
+        ESCRÍBENOS
       </h2>
       <p
-        class="text-sm md:text-base lg:text-lg
+        class="text-sm md:text-base lg:text-lg mt-5
             text-blanco font-medium leading-relaxed"
       >
         Estoy listo para ayudarte a crear una web profesional que impulse tu
@@ -33,45 +219,113 @@
       <div class="w-full mt-5">
         <form id="formularioContacto" method="post">
           <div>
-            <label for="nombre" class="font-DelaGothicOne text-lg text-acento">NOMBRE</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ejem Luis Mendoza" required
-            class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco">
+            <label for="nombre" class="font-DelaGothicOne text-lg text-acento"
+              >NOMBRE</label
+            >
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ejem Luis Mendoza"
+              required
+              class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco"
+            />
           </div>
 
-          
           <div class="mt-4">
-            <label for="email" class="font-DelaGothicOne text-lg text-acento">Email</label>
-            <input type="email" id="email" name="email" placeholder="Ejem luis_mendoza@gmail.com" required
-            class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco">
+            <label for="email" class="font-DelaGothicOne text-lg text-acento"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ejem luis_mendoza@gmail.com"
+              required
+              class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco"
+            />
           </div>
 
           <div class="mt-4">
-            <label for="whatsapp" class="font-DelaGothicOne text-lg text-acento">Whatsapp</label>
-            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Ejem +51 912 345 678" required
-            class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco">
+            <label for="whatsapp" class="font-DelaGothicOne text-lg text-acento"
+              >Whatsapp</label
+            >
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="Ejem +51 912 345 678"
+              required
+              class="w-full p-4 rounded-2xl border border-acento mt-1.5 placeholder:text-acento font-Poppins text-base text-blanco"
+            />
           </div>
-          
+
           <div class="mt-4">
-            <label for="mensaje" class="font-DelaGothicOne text-lg text-acento">Mensaje</label>
-            <textarea  name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aqui..." rows="4" required 
-            class="w-full border border-acento rounded-2xl placeholder:text-acento p-4 font-Poppins mt-1.5 text-blanco"
+            <label for="mensaje" class="font-DelaGothicOne text-lg text-acento"
+              >Mensaje</label
+            >
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              placeholder="Escribe tu mensaje aqui..."
+              rows="4"
+              required
+              class="w-full border border-acento rounded-2xl placeholder:text-acento p-4 font-Poppins mt-1.5 text-blanco"
             ></textarea>
           </div>
-          
-           <div class="mt-2">
-                <input type="checkbox" required>
-                <span class="text-blanco/70">Acepto  la política de protección  de <a href="/privacidad-de-datos" 
-                    class="text-blanco hover:underline">datos personales</a></span>
-           </div>
 
-           <button 
-           id="btnEnviarMensaje"
-           type="submit"
-           class="mt-4 w-full bg-primario p-4 font-Poppins font-bold text-base rounded-2xl text-white">
+          <div class="mt-2">
+            <input type="checkbox" required />
+            <span class="text-blanco/70"
+              >Acepto la política de protección de <a
+                href="/privacidad-de-datos"
+                class="text-blanco hover:underline">datos personales</a
+              ></span
+            >
+          </div>
+
+          <button
+            id="btnEnviarMensaje"
+            type="submit"
+            class="mt-4 w-full bg-primario p-4 font-Poppins font-bold text-base rounded-2xl text-white"
+          >
             Quiero que me contacten
-           </button>
+          </button>
         </form>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".faq-item");
+
+    items.forEach((item) => {
+      const button = item.querySelector("button")!;
+      const content = item.querySelector(".faq-content")!;
+      const icon = item.querySelector("svg")!;
+
+      button.addEventListener("click", () => {
+        const isOpen = content.classList.contains("open");
+
+        // cerrar todos
+        document.querySelectorAll(".faq-content").forEach((el) => {
+          el.classList.remove("open");
+          (el as HTMLElement).style.maxHeight = "0px";
+        });
+
+        document.querySelectorAll(".faq-item svg").forEach((svg) => {
+          svg.classList.remove("rotate-90");
+        });
+
+        // abrir actual si estaba cerrado
+        if (!isOpen) {
+          content.classList.add("open");
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.classList.add("rotate-90");
+        }
+      });
+    });
+  });
+</script>
