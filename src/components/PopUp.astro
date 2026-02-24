@@ -1,0 +1,86 @@
+---
+
+
+---
+
+<div
+  id="cookieBanner"
+  class="fixed bottom-0 left-0 w-full z-[999]
+         translate-y-full
+         transition-transform duration-500 ease-out"
+>
+  <div
+    class="bg-blanco text-negro
+           max-w-6xl mx-auto
+           m-4 lg:m-6
+           rounded-2xl
+           shadow-2xl
+           p-6
+           flex flex-col lg:flex-row
+           items-start lg:items-center
+           justify-between
+           gap-6"
+  >
+    <!-- TEXTO -->
+    <p class="font-Poppins text-sm leading-relaxed">
+      Utilizamos cookies para mejorar tu experiencia y analizar el tráfico del sitio.
+      Puedes aceptar o rechazar su uso.
+    </p>
+
+    <!-- BOTONES -->
+    <div class="flex gap-4 w-full lg:w-auto">
+      <button
+        id="rejectCookies"
+        class="px-5 py-2 rounded-xl
+               border border-acento
+               text-negro font-Poppins text-sm
+               hover:bg-acento/10
+               transition"
+      >
+        Rechazar
+      </button>
+
+      <button
+        id="acceptCookies"
+        class="px-5 py-2 rounded-xl
+               bg-primario text-blanco
+               font-Poppins text-sm font-semibold
+               hover:bg-btn
+               transition"
+      >
+        Aceptar
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById("cookieBanner");
+    const acceptBtn = document.getElementById("acceptCookies");
+    const rejectBtn = document.getElementById("rejectCookies");
+
+    const consent = localStorage.getItem("cookieConsent");
+
+    // Si no hay consentimiento guardado, mostrar banner
+    if (!consent) {
+      setTimeout(() => {
+        banner?.classList.remove("translate-y-full");
+      }, 500);
+    }
+
+    const closeBanner = () => {
+      banner?.classList.add("translate-y-full");
+    };
+
+    acceptBtn?.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "accepted");
+      closeBanner();
+    });
+
+    rejectBtn?.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "rejected");
+      closeBanner();
+    });
+  });
+</script>
