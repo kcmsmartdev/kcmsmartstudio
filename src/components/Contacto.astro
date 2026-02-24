@@ -233,10 +233,10 @@ import { Icon } from "astro-icon/components";
               name="nombre"
               placeholder="Ejem Luis Mendoza"
               required
-              class="w-full p-4 rounded-xl 
-              border border-acento/50 
+              class="w-full p-4 rounded-xl
+              border border-acento/50
               bg-white/5
-              focus:border-secundario 
+              focus:border-secundario
               focus:ring-2 focus:ring-secundario/30
               outline-none
               transition-all duration-200
@@ -256,10 +256,10 @@ import { Icon } from "astro-icon/components";
               name="email"
               placeholder="Ejem luis_mendoza@gmail.com"
               required
-              class="w-full p-4 rounded-xl 
-              border border-acento/50 
+              class="w-full p-4 rounded-xl
+              border border-acento/50
               bg-white/5
-              focus:border-secundario 
+              focus:border-secundario
               focus:ring-2 focus:ring-secundario/30
               outline-none
               transition-all duration-200
@@ -279,10 +279,10 @@ import { Icon } from "astro-icon/components";
               name="whatsapp"
               placeholder="Ejem +51 912 345 678"
               required
-              class="w-full p-4 rounded-xl 
-              border border-acento/50 
+              class="w-full p-4 rounded-xl
+              border border-acento/50
               bg-white/5
-              focus:border-secundario 
+              focus:border-secundario
               focus:ring-2 focus:ring-secundario/30
               outline-none
               transition-all duration-200
@@ -302,10 +302,10 @@ import { Icon } from "astro-icon/components";
               placeholder="Escribe tu mensaje aqui..."
               rows="4"
               required
-              class="w-full p-4 rounded-xl 
-              border border-acento/50 
+              class="w-full p-4 rounded-xl
+              border border-acento/50
               bg-white/5
-              focus:border-secundario 
+              focus:border-secundario
               focus:ring-2 focus:ring-secundario/30
               outline-none
               transition-all duration-200
@@ -315,14 +315,27 @@ import { Icon } from "astro-icon/components";
             ></textarea>
           </div>
 
-          <div class="mt-2">
-            <input type="checkbox" required />
-            <span class="text-blanco/70 font-Poppins"
-              >Acepto la política de protección de <a
-                href="/privacidad-de-datos"
-                class="text-blanco hover:underline">datos personales</a
-              ></span
+          <div class="mt-4 flex items-start gap-3">
+            <input
+              type="checkbox"
+              id="politica"
+              name="politica"
+              required
+              class="mt-1 accent-primario"
+            />
+
+            <label
+              for="politica"
+              class="text-blanco/70 font-Poppins text-sm leading-relaxed"
             >
+              Acepto la política de protección de
+              <a
+                href="/privacidad-de-datos"
+                class="text-blanco hover:underline"
+              >
+                datos personales
+              </a>
+            </label>
           </div>
 
           <button
