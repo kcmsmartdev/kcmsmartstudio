@@ -4,7 +4,7 @@ import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 ---
 
-<footer class="bg-Odeg w-full">
+<footer class="bg-Odeg w-full font-Poppins">
   <div class="max-w-7xl mx-auto p-3">
     <Image
       src={ImagenLogo}
@@ -58,14 +58,14 @@ import { Image } from "astro:assets";
       </a>
     </div>
     <div
-      class="py-5 border-t border-blanco/10 flex flex-col lg:flex-row justify-between items-center"
+      class="py-4 border-t border-blanco/10 flex flex-col lg:flex-row justify-between items-center"
     >
-      <p class="text-blanco/60 tracking-wide text-sm">
+      <p class="text-blanco/60 tracking-wide text-sm text-center">
         © <a href="">KCMSMART.COM</a>
-        {new Date().getFullYear()} | <br class="flex lg:hidden" /> Todos los derechos
+        {new Date().getFullYear()}  <br class="flex lg:hidden" /> Todos los derechos
         reservados
       </p>
-      <ul  class="flex flex-row gap-4 justify-center items-center">
+      <ul  class="flex flex-row gap-4 mt-5 lg:mt-0 justify-center items-center">
         <li>
           <a
             href="/"
